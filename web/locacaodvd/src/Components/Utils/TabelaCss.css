@@ -1,0 +1,102 @@
+/* TabelaCss.css */
+
+
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse:collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    
+  }
+  
+  thead {
+    background-color: #15C7F2;
+    color: #ffffff;
+  }
+  
+  thead th {
+    padding: 12px 15px;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  tbody td {
+    padding: 12px 15px;
+  }
+  
+  td button {
+    background-color: #15C7F2;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  td button:hover {
+    background-color: #1B89C8;
+  }
+  
+  /* Adiciona uma sombra ao redor da tabela */
+  table {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Adiciona um espaçamento entre as células da tabela */
+  table td, table th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+  }
+  
+  /* Estiliza a coluna de ações */
+  tbody td:last-child {
+    text-align: center;
+  }
+  
+  /* Botões de ação estilizados */
+  td button {
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    thead tr {
+      display: none;
+    }
+    tbody tr {
+      margin-bottom: 15px;
+    }
+    tbody td {
+      text-align: right;
+      padding-left: 50%;
+      position: relative;
+    }
+    tbody td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 50%;
+      padding-left: 15px;
+      font-weight: bold;
+      text-align: left;
+    }
+  }
+  

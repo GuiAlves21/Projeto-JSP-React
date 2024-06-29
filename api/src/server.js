@@ -1,11 +1,16 @@
 import express from 'express';
-import {allRoutes} from './routes.js';
+import { allRoutes } from './routes.js';
 import cors from 'cors';
 
 const app = express();
 
-app.use(cors());
-app.use(express.urlencoded({extended: true}));
+const corsOptions = {
+  origin: 'http://localhost:3000', // Permite requisições apenas do front-end
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(allRoutes);
 

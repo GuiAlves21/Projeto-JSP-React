@@ -1,0 +1,107 @@
+.caixaPrincipalGen {
+    height: auto;
+    width: 50%; /* Limita o máximo de largura para 500px */
+    background-color: #f2f2f2; /* Fundo cinza claro */
+    position: absolute;
+    top: 50%; /* Posiciona um pouco mais para cima */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaço entre os itens */
+    padding: 10px; /* Diminui o padding */
+    border-radius: 10px; /* Arredonda as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-size: 18px; /* Tamanho das letras */
+    text-align: center;
+  }
+  .caixaSecundaria{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+button {
+    background-color: #15C7F2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+  }
+  
+button:hover {
+    background-color: #1B89C8;
+  }
+
+/* Estilos para o modal */
+.Modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente para destacar o modal */
+  z-index: 1000; /* z-index alto para sobrepor outros elementos */
+}
+
+.ModalContent {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 400px; /* largura do modal */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.ModalContent h2 {
+  margin-bottom: 20px;
+}
+
+.ModalContent form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ModalContent label {
+  margin-bottom: 10px;
+}
+
+.ModalContent input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.ModalContent button {
+  background-color: #009879;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.ModalContent button:hover {
+  background-color: #007b63;
+}
+
+.ModalContent button[type="button"] {
+  background-color: #f44336; /* cor vermelha para botão de cancelar */
+}
+
+.ModalContent button[type="button"]:hover {
+  background-color: #cc0000;
+}

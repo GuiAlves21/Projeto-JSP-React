@@ -1,38 +1,7 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-image: url('../public/plano-fundo.jpg'); /* Substitua com o caminho correto da sua imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o fundo */
+  background-repeat: no-repeat; /* Evita a repetição da imagem */
+  background-attachment: fixed; /* Mantém a imagem fixa enquanto a página é rolada */
+  background-position: center; /* Centraliza a imagem no plano de fundo */
 }
